@@ -26,25 +26,22 @@
         
 }
 
-h1 {
-    width: 500px;
+.menuprincipal h1 a {
+    text-decoration: none;
+    margin-right: 100px;
     text-align: center;
     color:#fff;
 }
 
-.menuprincipal a {
-    text-decoration: none;
-}
-
-.menuprincipal a:hover h1 {
-    font-size: 2.3em;
+.menuprincipal h1 a:hover {
+    font-size: 1.2em;
     color: brown;
 }
 .contato img {
     width: 40px;
     height: auto;
     align-items: center;
-    margin: 5px;
+    margin: 5px 15px;
     border-radius: 10px;
 }
 .conteudo {
@@ -64,7 +61,94 @@ h1 {
     margin-left: 400px;
     padding: 20px;
     font-size: 20px;
-    text-align: left;
+    text-align: center;
     border: double;
     border-radius: 20px;
+}
+
+@media only screen and (max-width: 895px) {
+
+    .imgfoto {
+        padding: 20px 0 20px 0;
+        background: rgba(46, 38, 38, 0.308);
+    }
+
+    .imgfoto img {
+        width: 150px;
+        height: auto;
+        display: block;
+        position: revert;
+        margin: auto;
+        background-color: rgba(46, 38, 38, 0.308);
+    }
+
+    .principal {
+        width: 100%;
+        margin: auto;
+        align-items: center;
+    }
+
+    .menuprincipal {
+        display: block;
+        position: relative;
+        width: 100%;
+        margin-right: 0;
+        padding: 0;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    h1 a:hover {
+        font-size: 1.2em;
+        color: brown;
+    }
+
+    .menuprincipal h1 a {
+        width: 100%;
+        margin: auto;
+        font-size: 0.8em;
+    }
+
+    .contato {
+        display: inline-block;
+        margin: 15px auto;
+        width: calc(50% - 5px);
+
+       
+    }
+
+    .contato img {
+        width: 30px;
+        height: auto;
+        margin: auto;
+    }
+
+    #linkedin {
+        text-align: right;
+    }
+
+    #whastapp {
+        text-align: left;
+
+    }
+
+    .conteudo {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    .conteudo p {
+        width: 90%;
+        font-size: 0.9em;
+        border: double;
+        border-radius: 20px;
+        margin: 30px 5px;
+        padding: 10px;
+        border: none;
+        text-align: center;
+    }
 }
