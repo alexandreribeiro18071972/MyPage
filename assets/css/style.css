@@ -4,6 +4,9 @@
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif 
 }
 
+.flexcontainer {
+    height: 100%;
+}
 
 .imgfoto img {
     width: 225px;
@@ -29,15 +32,16 @@
 
 .menuprincipal h1 a {
     text-decoration: none;
-    margin-right: 100px;
+    margin-right: 60px;
     text-align: center;
     color:#fff;
 }
 
 .menuprincipal h1 a:hover {
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: bolder;
     color: blue;
+    transition: all 2s ease;
 }
 .contato img {
     width: 40px;
@@ -51,7 +55,7 @@
     flex-direction: column;
     justify-content: space-around;
     position: fixed;
-    margin-top: 137px;
+    margin-top: 133px;
     width: 100%;
     height: 60%;
     background: linear-gradient(180deg, rgba(46, 38, 38, 0.308), white);
@@ -89,6 +93,10 @@ footer {
     padding: 10px;
 }
 
+.rodape img {
+    width: 15px;
+}
+
 .rodape div a {
     text-decoration: none;
     color:black
@@ -98,6 +106,7 @@ footer {
     font-size: 15px;
     font-weight: bold;
     color: blue;
+    transition: all 1s ease;
 }
 
 @media only screen and (max-width: 895px) {
@@ -136,6 +145,8 @@ footer {
 
     .menuprincipal h1 a:hover {
         font-size: 0.9em;
+        transform: perspective(600px) rotateY(360deg);
+        transition: all 2s ease;
     }
 
     .menuprincipal h1 a {
@@ -147,22 +158,31 @@ footer {
     .contato {
         display: inline-block;
         margin: 15px auto;
-        width: calc(50% - 10px);
+        width: calc(33.3% - 10px);
     }
 
     .contato img {
         width: 30px;
         height: auto;
         margin: auto;
+        
+        
     }
 
     .contato a:hover img {
         width: 40px;
+        transform: perspective(600px) rotateX(360deg);
+        transition: all 1s ease;
+    }
+
+    #gmail {
+        text-align: right;
+        padding-right: 5px;
     }
 
     #linkedin {
-        text-align: right;
-        padding-right: 5px;
+        text-align: center;
+
     }
 
     #whastapp {
@@ -173,6 +193,7 @@ footer {
 
     .conteudo {
         display: block;
+        position: relative;
         width: 100%;
         height: auto;
         margin: auto;
@@ -181,12 +202,15 @@ footer {
     .conteudo p {
         width: 90%;
         font-size: 0.9em;
-        border: double;
         border-radius: 20px;
-        margin: 30px 5px;
+        margin: 0 5px;
         padding: 10px;
         border: none;
         text-align: center;
+    }
+
+    .footer {
+        position: relative;
     }
 
     .rodape {
@@ -196,5 +220,12 @@ footer {
 
     .rodape div {
         padding: 0;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    
+    footer {
+        display: none;
     }
 }
