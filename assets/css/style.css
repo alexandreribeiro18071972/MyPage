@@ -1,7 +1,28 @@
+:root {
+    --gray: rgba(46, 38, 38, 0.308);
+    --white: #ffffff;
+    --black: #000000;
+}
 * {
     margin: 0;
     padding: 0;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif 
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--fontColor);
+}
+
+.light-theme {
+    --bg: var(--gray);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+}
+
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--white);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+    
 }
 
 .flexcontainer {
@@ -25,7 +46,7 @@
     position: fixed;
     align-items: center;
     width: 96.1%;
-    background: rgba(46, 38, 38, 0.308);
+    background: var(--bg)/* rgba(46, 38, 38, 0.308) */;
     padding: 38px;
       
 }
@@ -43,6 +64,19 @@
     color: blue;
     transition: all 0.5s ease;
 }
+
+.btn {
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 10px;
+    margin-inline-end: 30px;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+
 .contato img {
     width: 40px;
     height: auto;
@@ -50,6 +84,7 @@
     margin: 5px 15px;
     border-radius: 10px;
 }
+
 .conteudo {
     display: flex;
     flex-direction: column;
@@ -57,7 +92,7 @@
     position: fixed;
     margin-top: 133px;
     width: 100%;
-    background: linear-gradient(180deg, rgba(46, 38, 38, 0.308), white);
+    background: linear-gradient(180deg, var(--bg) /*rgba(46, 38, 38, 0.308)*/, white);
 }
 
 .conteudo p {
@@ -81,7 +116,8 @@ footer {
     block-size: 90px;
     font-size: 12px;
     text-align: center;
-    background-color: rgba(46, 38, 38, 0.308);
+    background-color: var(--bg) /* rgba(46, 38, 38, 0.308) */;
+
 }
 
 .rodape {
@@ -101,7 +137,7 @@ footer {
 
 .rodape div a {
     text-decoration: none;
-    color:black
+    color: var(--fontColor) /* black */;
 }
 
 .rodape div a:hover {
@@ -111,105 +147,3 @@ footer {
     transition: all 0.5s ease;
 }
 
-@media only screen and (max-width: 895px) {
-
-    .imgfoto {
-        padding: 20px 0 20px 0;
-        background: rgba(46, 38, 38, 0.308);
-    }
-
-    .imgfoto img {
-        width: 150px;
-        height: auto;
-        display: block;
-        position: revert;
-        margin: auto;
-        background-color: rgba(46, 38, 38, 0.308);
-    }
-
-    .principal {
-        width: 100%;
-        margin: auto;
-        align-items: center;
-    }
-
-    .menuprincipal {
-        display: flex;
-        position: relative;
-        justify-content: center;
-        width: 100%;
-        margin-right: 0;
-        padding: 0;
-        flex-wrap: wrap;
-    }
-
-    h1 {
-        text-align: center;
-        inline-size: 100%;
-    }
-
-    .menuprincipal h1 a:hover {
-        font-size: 0.9em;
-        transition: all 0.5s ease;
-    }
-
-    .menuprincipal h1 a {
-        margin: auto;
-        font-size: 0.8em;
-    }
-
-    .contato {
-        display: inline-block;
-        margin: 15px 15px;
-        width: 10%;
-        text-align: center;
-    }
-
-    .contato img {
-        width: 30px;
-        height: auto;
-        margin: auto;
-    }
-
-    .contato a:hover img {
-        width: 40px;
-        transition: all 0.5s ease;
-    }
-
-    .conteudo {
-        display: block;
-        position: relative;
-        width: 100%;
-        height: auto;
-        margin: auto;
-    }
-
-    .conteudo p {
-        width: 90%;
-        height: 220px;
-        font-size: 15px;
-        margin: auto;
-        padding: 10px;
-        line-height: revert;;
-    }
-
-    .footer {
-        position: relative;
-    }
-
-    .rodape {
-        flex-direction: column;
-
-    }
-
-    .rodape div {
-        padding: 0;
-    }
-}
-
-@media screen and (max-height: 450px) {
-    
-    footer {
-        display: none;
-    }
-}

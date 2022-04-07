@@ -1,0 +1,106 @@
+@media only screen and (max-width: 895px) {
+
+    .imgfoto {
+        padding: 20px 0 20px 0;
+        background: var(--bg) /* rgba(46, 38, 38, 0.308) */;
+    }
+
+    .imgfoto img {
+        width: 150px;
+        height: auto;
+        display: block;
+        position: revert;
+        margin: auto;
+        background-color: var(--bg) /* rgba(46, 38, 38, 0.308) */;
+    }
+
+    .principal {
+        width: 100%;
+        margin: auto;
+        align-items: center;
+    }
+
+    .menuprincipal {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        width: 100%;
+        margin-right: 0;
+        padding: 0;
+        flex-wrap: wrap;
+    }
+
+    h1 {
+        text-align: center;
+        inline-size: 100%;
+    }
+
+    .menuprincipal h1 a:hover {
+        font-size: 0.9em;
+        transition: all 0.5s ease;
+    }
+
+    .menuprincipal h1 a {
+        margin: auto;
+        font-size: 0.8em;
+    }
+
+    .btn {
+        margin-inline-end: 0;
+    }
+
+    .contato {
+        display: inline-block;
+        margin: 15px 15px;
+        width: 10%;
+        text-align: center;
+    }
+
+    .contato img {
+        width: 30px;
+        height: auto;
+        margin: auto;
+    }
+
+    .contato a:hover img {
+        width: 40px;
+        transition: all 0.5s ease;
+    }
+
+    .conteudo {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    .conteudo p {
+        width: 90%;
+        height: 220px;
+        font-size: 15px;
+        margin: auto;
+        padding: 10px;
+        line-height: revert;;
+    }
+
+    .footer {
+        position: relative;
+    }
+
+    .rodape {
+        flex-direction: column;
+
+    }
+
+    .rodape div {
+        padding: 0;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    
+    footer {
+        display: none;
+    }
+}
