@@ -47,6 +47,8 @@
 
     .btn {
         margin-inline-end: 0;
+        height: 30px;
+        width: 30px;
     }
 
     .contato {
@@ -95,6 +97,10 @@
 
     .rodape div {
         padding: 0;
+    }
+
+    .rodape img {
+        display: none;
     }
 }
 
